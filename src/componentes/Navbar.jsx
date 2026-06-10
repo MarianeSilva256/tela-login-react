@@ -6,7 +6,7 @@ function Navbar() {
     display: 'flex',
     justifyContent: 'space-between',
     padding: '1rem 2rem',
-    backgroundColor: '#003366', // Azul combinando com seu slide de Objetivos
+    backgroundColor: '#003366', 
     color: 'white',
     alignItems: 'center'
   };
@@ -20,7 +20,7 @@ function Navbar() {
 
   return (
     <nav style={navStyle}>
-      <h2>FinançasApp</h2>
+      <h2>Invista Hub</h2>
       <div>
         <Link to="/" style={linkStyle}>Comece Aqui</Link>
         <Link to="/renda-fixa" style={linkStyle}>Renda Fixa</Link>

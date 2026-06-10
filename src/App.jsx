@@ -8,11 +8,8 @@ import Login from './pages/Login.jsx';
 
 function App() {
   return (
-    <Router>
-      {/* O Navbar fica fixo no topo em todas as páginas */}
-      <Navbar /> 
-      
-      {/* Aqui o React Router decide qual página renderizar baseado na URL */}
+    <>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/renda-fixa" element={<div style={{padding: '2rem'}}><h1>Renda Fixa</h1><p>Conteúdo de Renda Fixa...</p></div>} />
@@ -21,8 +18,8 @@ function App() {
         <Route path="/analises" element={<Analises />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/login" element={<Login />} />
-      </Routes>
-    </Router>
+    </Routes>
+    </>
   );
 }
 
